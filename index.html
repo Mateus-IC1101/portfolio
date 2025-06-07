@@ -26,19 +26,22 @@
             <div class="card-image" style="text-align: center;  padding: 20px;">
                 <img  src="assets/foto.jpeg" alt="Sua Foto" style="border-radius: 110%; width: 250px; height: 250px; object-fit:cover">
             </div>
+            <!-- <div id="terminal" style="font-family: 'Courier New', monospace; color: #bb86fc; background: rgb(40, 39, 39); border-radius: 8px; min-height: 20px;"></div> -->
             <div class="card-content" style="padding: 20px; text-align: center;">
                 <h1 style="font-size: 24px; margin-bottom: 10px;">Mateus Araujo</h1>
                 <p style="font-size: 16px; color: #555; margin-bottom: 15px;">Desenvolvedor Web e Mobile</p>
                 <p style="font-size: 14px; color: #777; margin-bottom: 20px;">
                     <!-- <a href="mailto:francisco.email@example.com" style="color: #49a4ff; text-decoration: none;">mateus.dolglas8@gmail.com <i class="fab far fa-envelope"></i></a> -->
-                    <a href="#contantosDiv">Contato </a>
+                    <a href="#contantosDiv" style="color: #bb86fc; text-decoration: none; font-weight: 500;">
+                        <i class="fas fa-envelope" style="margin-right: 6px;"></i> Contato
+                    </a>
                 </p>
                 <!-- <p style="font-size: 14px; color: #ecf0f4;font-weight: 600;text-align: left;text-indent: 25px;">
                     Olá, Seja bem-vindo(a)
                 </p> -->
                 <div class="divDescricao">
-                    <p style="font-size: 14px; color: #ecf0f4;font-weight: 200;">
-                        Me chamo Mateus e sou desenvolvedor de aplicativos mobile e sistemas web, formado em Análise e Desenvolvimento de Sistemas pela Uninter. Com mais de 4 anos de experiência na área, sou apaixonado pelo que faço e estou sempre em busca de novos conhecimentos e desafios para crescer profissionalmente.
+                    <p style="font-size: 14px; color: #ecf0f4;font-weight: 200;" id="terminal">
+                      
                     </p>
                 </div>
             </div>
@@ -80,17 +83,26 @@
             <div class="portfolio-card">
                 <div class="portfolio-header">
                     <h2>APLICATIVO EDUK ALUNO</h2>
-                   <div class="textLeft">
+                    <div class="textLeft">
                         <p>
-                            Desenvolvimento de um aplicativo que se integra ao sistema web das faculdades para uso dos alunos. <br>
-                            O aplicativo permite facilitar aos alunos a geração boleto, geração 2ª via de boleto, compartilhamento de arquivos, armazenamento de arquivos no dispositivo. Além do acesso de notas, também possível alterar informações pessoais do próprio aluno. <br>
-                            <span style="color: #bb86fc;">►</span>  Desenvolvido em Flutter e Laravel (API Rest)<br>
-                             <span style="color: #bb86fc;">►</span> Persistência de dados; <br>
-                             <span style="color: #bb86fc;">►</span> Uso online<br>
-                             <span style="color: #bb86fc;">►</span> Manipulação de dados via API Rest <br>
-                             <span style="color: #bb86fc;">►</span> Disponível na Play Store <i class="fab fab fab fa-google-play"></i> e Apple Store <i class="fab fab fa-apple"></i>
+                            Desenvolvimento de um aplicativo integrado ao sistema acadêmico das faculdades, proporcionando aos alunos funcionalidades essenciais para o dia a dia estudantil.
                         </p>
-                   </div>
+                        <br>
+                        <p>
+                            O aplicativo foi desenvolvido em Flutter. Fui, também, responsável pela implementação do backend (API REST) em Laravel e pela integração das notificações push via Firebase Cloud Messaging (FCM), utilizando processamento com filas e agendamento por cronjob, garantindo alta performance e escalabilidade no envio das notificações.
+                        </p>
+                        <br>
+                        <p><i class="fas fa-file-invoice-dollar" style="color:#64d567;"></i> Financeiro do aluno (geração de boletos bancários, 2ª via de boleto)</p>
+                        <p><i class="fas fa-clipboard-list" style="color:#cfd8dc;"></i> Consulta de notas e desempenho acadêmico</p>
+                        <p><i class="fas fa-user-edit" style="color:#ff9800;"></i> Atualização de informações pessoais</p>         
+                        
+                        <p><i class="fas fa-file-upload" style="color:#cfd8dc;"></i> Compartilhamento de arquivos</p>
+                        <p><i class="fas fa-save" style="color:#2196f3;"></i> Armazenamento local de documentos</p>
+                        <p><i class="fas fa-sync-alt" style="color:#03a9f4;"></i> Integração e manipulação de dados via API REST/p>
+                        <p><i class="fas fa-database" style="color:#d3ef34;"></i> Persistência local de dados</p>
+                        <p><i class="fas fa-bell" style="color:#2196f3;"></i> Integração com Firebase Cloud Messaging (FCM) para envio e recebimento de notificações</p>
+                        <p><i class="fab fa-google-play" style="color:#cfd8dc;"></i> Disponível na Play Store e &nbsp;<i class="fab fa-apple" style="color:#cfd8dc;"></i> Apple Store</p>
+                    </div>
                 </div>
                 <div class="portfolio-images">
                     <img style="width: 220px;" src="assets/app_eduk_aluno/00.jpeg" alt="Imagem App">
@@ -99,6 +111,7 @@
                     <img style="width: 220px;" src="assets/app_eduk_aluno/03.jpeg" alt="Imagem App">
                     <img style="width: 220px;" src="assets/app_eduk_aluno/05.jpeg" alt="Imagem App">
                     <img style="width: 220px;" src="assets/app_eduk_aluno/04.jpeg" alt="Imagem App">
+                    <img style="width: 220px;" src="assets/app_eduk_aluno/06.jpeg" alt="Imagem App">
                 </div>
             </div>
 
@@ -107,14 +120,21 @@
                     <h2>APLICATIVO MOBILIZE</h2>
                    <div class="textLeft">
                         <p>
-                            Desenvolvimento de aplicativo o qual é vinculado a um sistema de política pública web para o acompanhamento de votos municipais. <br>
-                            <span style="color: #bb86fc;">►</span>  Desenvolvido em Flutter <br>
-                             <span style="color: #bb86fc;">►</span> Persistência de dados; <br>
-                             <span style="color: #bb86fc;">►</span> Recurso de envio de foto do dispositivo ou pela câmera para upload no servidor; <br>
-                             <span style="color: #bb86fc;">►</span> Gráficos; <br>
-                             <span style="color: #bb86fc;">►</span> Manipulação de dados via API Rest <br>
-                             <span style="color: #bb86fc;">►</span> Disponível na Play Store <i class="fab fab fab fa-google-play"></i> e Apple Store <i class="fab fab fa-apple"></i>
+                           Desenvolvimento de aplicativo vinculado a um sistema de política pública web para o acompanhamento de votos municipais.
                         </p>
+                        <br>
+                        <p> O aplicativo foi desenvolvido em Flutter.</p>
+                        <br>
+                        <p><i class="fas fa-users" style="color:#ff9800;"></i> Cadastro de apoiadores</p>
+                        <p><i class="fas fa-id-card-alt" style="color:#03a9f4;"></i> Consulta de informações de outras lideranças</p>
+                        <p><i class="fas fa-tasks" style="color:#8bc34a;"></i> Registro e acompanhamento de demandas</p>
+
+                        <p><i class="fas fa-database" style="color:#d3ef34;"></i> Persistência local de dados</p>
+                        <p><i class="fas fa-camera" style="color:#9c27b0;"></i> Envio de fotos do dispositivo ou pela câmera para upload via API REST</p>
+                        <p><i class="fas fa-chart-line" style="color:#4caf50;"></i> Geração e exibição de gráficos</p>
+                        <p><i class="fas fa-sync-alt" style="color:#03a9f4;"></i> Integração e manipulação de dados via API REST</p>
+                        <p><i class="fab fa-google-play" style="color:#cfd8dc;"></i> Disponível na Play Store e &nbsp;<i class="fab fa-apple" style="color:#cfd8dc;"></i> Apple Store</p>
+
                    </div>
                 </div>
                 <div class="portfolio-images">
@@ -131,15 +151,21 @@
                     <h2>APLICATIVO EPUBLIC CASTELO DO PIAUÍ</h2>
                    <div class="textLeft">
                         <p>
-                            Desenvolvimento de um aplicativo que se integra ao sistema web de gestão escolar para uso dos professores <br>
-                            <span style="color: #bb86fc;">►</span>  Desenvolvido em Flutter e Laravel (API Rest)<br>
-                             <span style="color: #bb86fc;">►</span> Persistência de dados; <br>
-                             <span style="color: #bb86fc;">►</span> Uso online ou offline; <br>
-                             <span style="color: #bb86fc;">►</span> Gráficos; <br>
-                             <span style="color: #bb86fc;">►</span> Manipulação de dados via API Rest <br>
-                             <span style="color: #bb86fc;">►</span> Disponível na Play Store <i class="fab fab fab fa-google-play"></i>
+                          Aplicativo desenvolvido para integrar-se ao sistema de gestão escolar, oferecendo aos professores recursos práticos para acompanhamento pedagógico.
                         </p>
-                   </div>
+                        <br>
+                        <p>Desenvolvido em Flutter e, no backend, Laravel (API REST)</p>
+                        <br>
+                        <p><i class="fas fa-book-open" style="color:#4fc3f7;"></i> Acesso às disciplinas e turmas</p>
+                        <p><i class="fas fa-chalkboard" style="color:#ba68c8;"></i> Criação e organização de aulas</p>
+                        <p><i class="fas fa-user-check" style="color:#81c784;"></i> Registro de frequência dos alunos</p>
+                        
+                        <p><i class="fas fa-database" style="color:#d3ef34;"></i> Persistência local de dados</p>
+                        <p><i class="fas fa-wifi" style="color:#4dd0e1;"></i> Funcionalidades disponíveis online e offline</p>
+                        <p><i class="fas fa-chart-line" style="color:#4caf50;"></i> Exibição de gráficos e indicadores pedagógicos</p>
+                        <p><i class="fas fa-sync-alt" style="color:#03a9f4;"></i> Integração e manipulação de dados via API REST</p>
+                        <p><i class="fab fa-google-play" style="color:#cfd8dc;"></i> Disponível na Play Store</p>
+                    </div>
                 </div>
                 <div class="portfolio-images">
                     <img style="width: 220px;" src="assets/app_epublic_castelo/00.jpeg" alt="Imagem App">
@@ -181,4 +207,19 @@
         document.getElementById('ano').textContent = anoAtual;
     </script>
 </body>
+<script>
+    const texto = "  Me chamo Mateus e sou desenvolvedor de aplicativos mobile e sistemas web. Formado em Análise e Desenvolvimento de Sistemas pela Uninter e atuando desde de 2020 na área. Sou apaixonado pelo que faço e estou sempre em busca de novos conhecimentos e desafios para crescer profissionalmente";
+    const terminal = document.getElementById("terminal");
+    let index = 0;
+
+    function digitar() {
+        if (index < texto.length) {
+            terminal.innerHTML += texto.charAt(index);
+            index++;
+            setTimeout(digitar, 50); // velocidade da digitação
+        }
+    }
+
+    window.addEventListener("load", digitar);
+</script>
 </html>

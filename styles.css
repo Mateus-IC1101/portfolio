@@ -60,7 +60,7 @@ header nav ul li a:hover {
     border-radius: 0px;
     box-shadow: 0 2px 20px #6200ea;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-image: url('assets/background.png');
+    /* background-image: url('assets/background.png'); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -164,7 +164,7 @@ header nav ul li a:hover {
         background-position-x:center;
     } */
     .card-content{
-        margin-top: 400px;
+        /* margin-top: 400px; */
     }
 }
 
