@@ -22,30 +22,24 @@
     </header> -->
 
     <section id="home" class="home-section">
-        <div class="card" style="border: 1px solid #ccc; border-radius: 10px; margin: 0 auto; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-            <div class="card-image" style="text-align: center;  padding: 20px;">
-                <img  src="assets/foto.jpeg" alt="Sua Foto" style="border-radius: 110%; width: 250px; height: 250px; object-fit:cover">
-            </div>
-            <!-- <div id="terminal" style="font-family: 'Courier New', monospace; color: #bb86fc; background: rgb(40, 39, 39); border-radius: 8px; min-height: 20px;"></div> -->
-            <div class="card-content" style="padding: 20px; text-align: center;">
-                <h1 style="font-size: 24px; margin-bottom: 10px;">Mateus Araujo</h1>
-                <p style="font-size: 16px; color: #555; margin-bottom: 15px;">Desenvolvedor Web e Mobile</p>
-                <p style="font-size: 14px; color: #777; margin-bottom: 20px;">
-                    <!-- <a href="mailto:francisco.email@example.com" style="color: #49a4ff; text-decoration: none;">mateus.dolglas8@gmail.com <i class="fab far fa-envelope"></i></a> -->
-                    <a href="#contantosDiv" style="color: #bb86fc; text-decoration: none; font-weight: 500;">
-                        <i class="fas fa-envelope" style="margin-right: 6px;"></i> Contato
-                    </a>
-                </p>
-                <!-- <p style="font-size: 14px; color: #ecf0f4;font-weight: 600;text-align: left;text-indent: 25px;">
-                    Olá, Seja bem-vindo(a)
-                </p> -->
-                <div class="divDescricao">
-                    <p style="font-size: 14px; color: #ecf0f4;font-weight: 200;" id="terminal">
-                      
-                    </p>
-                </div>
-            </div>
+        <div class="card" style="border:1px solid #ccc;border-radius:10px;margin:0 auto;overflow:hidden;box-shadow:0 4px 8px rgba(0,0,0,0.1);max-width:900px">
+        <!-- foto removida -->
+        <div class="card-content" style="padding:24px;text-align:center">
+            <h1 style="font-size:28px;margin:0 0 8px">Bem-vindo! Me chamo Mateus.</h1>
+            <p style="font-size:16px;color:#cfcccc;margin:0 0 12px">Desenvolvedor Web e Mobile</p>
+            <p style="font-size:15px;color:#cfcccc;line-height:1.6;max-width:720px;margin:0 auto 18px;">
+            Sou desenvolvedor de aplicativos mobile e sistemas web, formado em Análise e Desenvolvimento de Sistemas pela Uninter.
+            Atuo desde 2020, com expertise em desenvolvedor aplicações escaláveis e bem estruturadas.
+            Estou sempre em busca de novos desafios e aprendizados para evoluir profissionalmente.
+            </p>
+            <p style="font-size:14px;margin:10px 0 0;">
+            <a href="#contantosDiv" style="color:#bb86fc;text-decoration:none;font-weight:600;">
+                <i class="fas fa-envelope" style="margin-right:6px;"></i>Contato
+            </a>
+            </p>
         </div>
+        </div>
+
        <div>
             <div class="details">
                 <h2>Tecnologias</h2>
@@ -207,19 +201,4 @@
         document.getElementById('ano').textContent = anoAtual;
     </script>
 </body>
-<script>
-    const texto = "  Me chamo Mateus e sou desenvolvedor de aplicativos mobile e sistemas web. Formado em Análise e Desenvolvimento de Sistemas pela Uninter e atuando desde de 2020 na área. Sou apaixonado pelo que faço e estou sempre em busca de novos conhecimentos e desafios para crescer profissionalmente";
-    const terminal = document.getElementById("terminal");
-    let index = 0;
-
-    function digitar() {
-        if (index < texto.length) {
-            terminal.innerHTML += texto.charAt(index);
-            index++;
-            setTimeout(digitar, 50); // velocidade da digitação
-        }
-    }
-
-    window.addEventListener("load", digitar);
-</script>
 </html>
