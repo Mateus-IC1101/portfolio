@@ -3,202 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Mateus</title>
+    <title>Mateus Araujo — Desenvolvedor de Software</title>
+    <meta name="description" content="Desenvolvimento de aplicativos mobile em Flutter e sistemas web com Laravel. Projetos em produção nas áreas de educação, finanças e gestão pública.">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Aplica o tema salvo antes da renderização para evitar "piscar" -->
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+            } catch (e) {}
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="projects_style.css">
-    <link rel="stylesheet" href="ultils.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    
-    <!-- <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Página Inicial</a></li>
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header> -->
 
-    <section id="home" class="home-section">
-        <div class="card" style="border:1px solid #ccc;border-radius:10px;margin:0 auto;overflow:hidden;box-shadow:0 4px 8px rgba(0,0,0,0.1);max-width:900px">
-        <!-- foto removida -->
-        <div class="card-content" style="padding:24px;text-align:center">
-            <h1 style="font-size:28px;margin:0 0 8px">Bem-vindo! Me chamo Mateus.</h1>
-            <p style="font-size:16px;color:#cfcccc;margin:0 0 12px">Desenvolvedor Web e Mobile</p>
-            <p style="font-size:15px;color:#cfcccc;line-height:1.6;max-width:720px;margin:0 auto 18px;">
-            Sou desenvolvedor de aplicativos mobile e sistemas web, formado em Análise e Desenvolvimento de Sistemas pela Uninter.
-            Atuo desde 2020, com expertise em desenvolvedor aplicações escaláveis e bem estruturadas.
-            Estou sempre em busca de novos desafios e aprendizados para evoluir profissionalmente.
-            </p>
-            <p style="font-size:14px;margin:10px 0 0;">
-            <a href="#contantosDiv" style="color:#bb86fc;text-decoration:none;font-weight:600;">
-                <i class="fas fa-envelope" style="margin-right:6px;"></i>Contato
-            </a>
-            </p>
+    <a class="skip-link" href="#projetos">Pular para os projetos</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#inicio" class="brand">Mateus Araujo</a>
+            <nav class="nav" aria-label="Navegação principal">
+                <a href="#projetos">Projetos</a>
+                <a href="#stack">Stack</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <button class="icon-btn theme-toggle" type="button" aria-label="Alternar tema claro/escuro">
+                <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            </button>
         </div>
-        </div>
+    </header>
 
-       <div>
-            <div class="details">
-                <h2>Tecnologias</h2>
-                <ul>
-                    <!-- <li><i class="fab fa-php"></i> PHP</li> -->
-                    <li><i class="fab fa-laravel"></i> Laravel</li>
-                    <!-- <li><i class="fab fa-js"></i> JavaScript</li> -->
-                    <li><i class="fab fa-vuejs"></i> VueJS</li>
-                    <li><i class="fab fab fa-android"></i> Flutter</li>
-                    <!-- <li><i class="fab fa-android"></i> Android Nativo com Kotlin</li> -->
-                    <li><i class="fas fa-database"></i> MYSQL</li>
-                    <li><i class="fas fa-server"></i> Redis</li>
-                </ul>
+    <main>
+
+        <!-- ===================== INÍCIO ===================== -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <p class="eyebrow">Desenvolvedor Flutter · Mobile e Web</p>
+                <h1 class="hero-title">Aplicativos e sistemas&nbsp;web desenvolvidos para uso real.</h1>
+                <p class="hero-lead">
+                    Especialista em Flutter, crio aplicativos escaláveis e de alta performance para
+                    Android e iOS, com Clean Architecture, SOLID e boas práticas de código.
+                    Do app à API, entrego soluções completas, seguras e prontas para produção.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+                    <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
+                </div>
+
+                <dl class="facts">
+                    <div class="fact">
+                        <dt>Desde 2020</dt>
+                        <dd>Atuação em desenvolvimento de software</dd>
+                    </div>
+                    <div class="fact">
+                        <dt class="fact-stores">
+                            <svg viewBox="0 0 24 24" class="fill" aria-hidden="true"><path d="M22.02 13.3l-3.92 2.22-3.52-3.5 3.55-3.52 3.89 2.2a1.49 1.49 0 0 1 0 2.6zM1.34.92a1.49 1.49 0 0 0-.11.57v21.02c0 .22.04.42.12.6l11.15-11.09L1.34.92zm12.2 10.07l3.26-3.24L3.45.2A1.47 1.47 0 0 0 2.5.02l11.04 10.97zm0 2.07l-11 10.93c.3.04.61-.02.9-.18l13.33-7.54-3.23-3.21z"/></svg>
+                            <svg viewBox="0 0 24 24" class="fill" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                            <span>Google Play e App Store</span>
+                        </dt>
+                        <dd>Aplicativos publicados nas lojas oficiais</dd>
+                    </div>
+                    <div class="fact">
+                        <dt>Flutter + Laravel</dt>
+                        <dd>Mobile, API REST e integrações</dd>
+                    </div>
+                </dl>
             </div>
-            <div class="experience">
-                <h2>Conhecimentos e experiências</h2>
-                <ul>
-                    <li><i class="fas fa-archway"></i> Clean Architecture</li>
-                    <li><i class="fas fa-shapes"></i> Design Patterns</li>
-                    <li><i class="fas fa-check-circle"></i> TDD</li>
-                    <li><i class="fas fa-code"></i> Clean Code</li>
-                    <li><i class="fas fa-cube"></i> Solid</li>
-                    <li><i class="fab fa-git-alt"></i> Git</li>
-                    <li><i class="fab fa-github"></i> Github | CI/CD</li>
-                    <li><i class="fas fa-fire"></i> Firebase</li>
-                    <!-- <li><i class="fab fa-docker"></i> Docker</li> -->
-                </ul>
+        </section>
+
+        <!-- ===================== PROJETOS ===================== -->
+        <!-- Os cards são gerados em script.js a partir da lista PROJECTS.
+             Para ocultar/reativar um projeto, comente/descomente a entrada dele lá. -->
+        <section id="projetos" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Projetos</p>
+                    <h2 class="section-title">Aplicativos em produção</h2>
+                    <p class="section-lead">Selecione um projeto para ver as telas, funcionalidades e tecnologias.</p>
+                </div>
+                <ol class="project-list" id="projectList"></ol>
+                <noscript><p class="section-lead">Ative o JavaScript para visualizar os projetos.</p></noscript>
             </div>
-       </div>
+        </section>
 
-       <div class="projects portfolio-section" style="padding: 20px 20px !important;">
-        <h2 class="textContentInitial">Projetos Independentes no Mercado</h2>
-        <div class="portfolio-section">
+        <!-- ===================== STACK / EXPERIÊNCIA ===================== -->
+        <section id="stack" class="section section-alt">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Stack e experiência</p>
+                    <h2 class="section-title">Tecnologias e práticas</h2>
+                </div>
 
-            <div class="portfolio-card">
-                <div class="portfolio-header">
-                    <h2>APLICATIVO EDUK ALUNO</h2>
-                    <div class="textLeft">
-                        <p>
-                            Desenvolvimento de um aplicativo integrado ao sistema acadêmico das faculdades, proporcionando aos alunos funcionalidades essenciais para o dia a dia estudantil.
-                        </p>
-                        <br>
-                        <p>
-                            O aplicativo foi desenvolvido em Flutter. Fui, também, responsável pela implementação do backend (API REST) em Laravel e pela integração das notificações push via Firebase Cloud Messaging (FCM), utilizando processamento com filas e agendamento por cronjob, garantindo alta performance e escalabilidade no envio das notificações.
-                        </p>
-                        <br>
-                        <p><i class="fas fa-file-invoice-dollar" style="color:#64d567;"></i> Financeiro do aluno (geração de boletos bancários, 2ª via de boleto)</p>
-                        <p><i class="fas fa-clipboard-list" style="color:#cfd8dc;"></i> Consulta de notas e desempenho acadêmico</p>
-                        <p><i class="fas fa-user-edit" style="color:#ff9800;"></i> Atualização de informações pessoais</p>         
-                        
-                        <p><i class="fas fa-file-upload" style="color:#cfd8dc;"></i> Compartilhamento de arquivos</p>
-                        <p><i class="fas fa-save" style="color:#2196f3;"></i> Armazenamento local de documentos</p>
-                        <p><i class="fas fa-sync-alt" style="color:#03a9f4;"></i> Integração e manipulação de dados via API REST</p>
-                        <p><i class="fas fa-database" style="color:#d3ef34;"></i> Persistência local de dados</p>
-                        <p><i class="fas fa-bell" style="color:#2196f3;"></i> Integração com Firebase Cloud Messaging (FCM) para envio e recebimento de notificações</p>
-                        <p><i class="fab fa-google-play" style="color:#cfd8dc;"></i> Disponível na Play Store e &nbsp;<i class="fab fa-apple" style="color:#cfd8dc;"></i> Apple Store</p>
+                <div class="stack-grid">
+                    <div class="stack-col">
+                        <h3 class="stack-title">Tecnologias</h3>
+                        <ul class="chips">
+                            <!-- <li>PHP</li> -->
+                            <li>Flutter</li>
+                            <li>Laravel</li>
+                            <!-- <li>JavaScript</li> -->
+                            <li>Vue.js</li>
+                            <!-- <li>Android Nativo com Kotlin</li> -->
+                            <li>MySQL</li>
+                            <li>Redis</li>
+                            <li>Firebase</li>
+                            <!-- <li>Docker</li> -->
+                        </ul>
+                    </div>
+                    <div class="stack-col">
+                        <h3 class="stack-title">Práticas</h3>
+                        <ul class="chips">
+                            <li>Clean Architecture</li>
+                            <li>Design Patterns</li>
+                            <li>TDD</li>
+                            <li>Clean Code</li>
+                            <li>SOLID</li>
+                            <li>Git</li>
+                            <li>GitHub · CI/CD</li>
+                        </ul>
+                    </div>
+                    <div class="stack-col">
+                        <h3 class="stack-title">Experiência</h3>
+                        <ul class="timeline">
+                            <li>
+                                <span class="timeline-meta">2020 — atual</span>
+                                <span class="timeline-text">Desenvolvimento de aplicativos mobile e sistemas web, com foco em aplicações escaláveis e bem estruturadas.</span>
+                            </li>
+                            <li>
+                                <span class="timeline-meta">Formação</span>
+                                <span class="timeline-text">Análise e Desenvolvimento de Sistemas — Uninter.</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="portfolio-images">
-                    <img style="width: 220px;" src="assets/app_eduk_aluno/00.jpeg" alt="Imagem App">
-                    <img style="width: 220px;" src="assets/app_eduk_aluno/01.jpeg" alt="Imagem App">
-                    <img style="width: 220px;" src="assets/app_eduk_aluno/02.jpeg" alt="Imagem App">
-                    <img style="width: 220px;" src="assets/app_eduk_aluno/03.jpeg" alt="Imagem App">
-                    <img style="width: 220px;" src="assets/app_eduk_aluno/05.jpeg" alt="Imagem App">
-                    <img style="width: 220px;" src="assets/app_eduk_aluno/04.jpeg" alt="Imagem App">
-                    <img style="width: 220px;" src="assets/app_eduk_aluno/06.jpeg" alt="Imagem App">
-                </div>
             </div>
+        </section>
 
-            <div class="portfolio-card">
-                <div class="portfolio-header">
-                    <h2>APLICATIVO MOBILIZE</h2>
-                   <div class="textLeft">
-                        <p>
-                           Desenvolvimento de aplicativo vinculado a um sistema de política pública web para o acompanhamento de votos municipais.
-                        </p>
-                        <br>
-                        <p> O aplicativo foi desenvolvido em Flutter.</p>
-                        <br>
-                        <p><i class="fas fa-users" style="color:#ff9800;"></i> Cadastro de apoiadores</p>
-                        <p><i class="fas fa-id-card-alt" style="color:#03a9f4;"></i> Consulta de informações de outras lideranças</p>
-                        <p><i class="fas fa-tasks" style="color:#8bc34a;"></i> Registro e acompanhamento de demandas</p>
-
-                        <p><i class="fas fa-database" style="color:#d3ef34;"></i> Persistência local de dados</p>
-                        <p><i class="fas fa-camera" style="color:#9c27b0;"></i> Envio de fotos do dispositivo ou pela câmera para upload via API REST</p>
-                        <p><i class="fas fa-chart-line" style="color:#4caf50;"></i> Geração e exibição de gráficos</p>
-                        <p><i class="fas fa-sync-alt" style="color:#03a9f4;"></i> Integração e manipulação de dados via API REST</p>
-                        <p><i class="fab fa-google-play" style="color:#cfd8dc;"></i> Disponível na Play Store e &nbsp;<i class="fab fa-apple" style="color:#cfd8dc;"></i> Apple Store</p>
-
-                   </div>
+        <!-- ===================== CONTATO ===================== -->
+        <section id="contato" class="section">
+            <div class="container contact">
+                <div>
+                    <p class="eyebrow">Contato</p>
+                    <h2 class="section-title">Vamos conversar sobre o seu projeto.</h2>
                 </div>
-                <div class="portfolio-images">
-                    <img style="width: 220px;" src="assets/app_mobilize/00.jpeg" alt="image App">
-                    <img style="width: 220px;" src="assets/app_mobilize/01.jpeg" alt="image App">
-                    <img style="width: 220px;" src="assets/app_mobilize/02.jpeg" alt="image App">
-                    <img style="width: 220px;" src="assets/app_mobilize/03.jpeg" alt="image App">
-                    <img style="width: 220px;" src="assets/app_mobilize/04.jpeg" alt="image App">
-                </div>
+                <ul class="contact-list">
+                    <li>
+                        <a href="mailto:mateus.dolglas8@gmail.com" class="contact-link">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                            <span>
+                                <span class="contact-label">E-mail</span>
+                                <span class="contact-value">mateus.dolglas8@gmail.com</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Mateus-IC1101" target="_blank" rel="noopener" class="contact-link">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+                            <span>
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">github.com/Mateus-IC1101</span>
+                            </span>
+                        </a>
+                    </li>
+                    <!-- LinkedIn (oculto — descomente para reativar)
+                    <li>
+                        <a href="https://www.linkedin.com/in/mateus-araujo-75845b259" target="_blank" rel="noopener" class="contact-link">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                            <span>
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">mateus-araujo</span>
+                            </span>
+                        </a>
+                    </li>
+                    -->
+                    <!-- WhatsApp (oculto — descomente para reativar)
+                    <li>
+                        <a href="https://wa.me/5586995335104" target="_blank" rel="noopener" class="contact-link">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.65-4.5A8.5 8.5 0 1 1 7.5 19.35z"/></svg>
+                            <span>
+                                <span class="contact-label">WhatsApp</span>
+                                <span class="contact-value">(86) 99533-5104</span>
+                            </span>
+                        </a>
+                    </li>
+                    -->
+                </ul>
             </div>
-        
-            <div class="portfolio-card">
-                <div class="portfolio-header">
-                    <h2>APLICATIVO EPUBLIC CASTELO DO PIAUÍ</h2>
-                   <div class="textLeft">
-                        <p>
-                          Aplicativo desenvolvido para integrar-se ao sistema de gestão escolar, oferecendo aos professores recursos práticos para acompanhamento pedagógico.
-                        </p>
-                        <br>
-                        <p>Desenvolvido em Flutter e, no backend, Laravel (API REST)</p>
-                        <br>
-                        <p><i class="fas fa-book-open" style="color:#4fc3f7;"></i> Acesso às disciplinas e turmas</p>
-                        <p><i class="fas fa-chalkboard" style="color:#ba68c8;"></i> Criação e organização de aulas</p>
-                        <p><i class="fas fa-user-check" style="color:#81c784;"></i> Registro de frequência dos alunos</p>
-                        
-                        <p><i class="fas fa-database" style="color:#d3ef34;"></i> Persistência local de dados</p>
-                        <p><i class="fas fa-wifi" style="color:#4dd0e1;"></i> Funcionalidades disponíveis online e offline</p>
-                        <p><i class="fas fa-chart-line" style="color:#4caf50;"></i> Exibição de gráficos e indicadores pedagógicos</p>
-                        <p><i class="fas fa-sync-alt" style="color:#03a9f4;"></i> Integração e manipulação de dados via API REST</p>
-                        <p><i class="fab fa-google-play" style="color:#cfd8dc;"></i> Disponível na Play Store</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>© <span id="ano"></span> Mateus Araujo</span>
+            <a href="#inicio">Voltar ao topo</a>
+        </div>
+    </footer>
+
+    <!-- ===================== PÁGINA DO PROJETO (fundo preto) ===================== -->
+    <div class="project-view" id="projectView" role="dialog" aria-modal="true" aria-labelledby="pvTitle" tabindex="-1" hidden>
+        <div class="pv-bar">
+            <button class="pv-back" type="button" data-close>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+                <span>Projetos</span>
+            </button>
+            <span class="pv-count" id="pvCount"></span>
+            <button class="pv-close" type="button" data-close aria-label="Fechar">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+            </button>
+        </div>
+
+        <div class="pv-scroll" id="pvScroll">
+            <div class="pv-inner">
+                <header class="pv-head">
+                    <p class="pv-eyebrow" id="pvCategory"></p>
+                    <h2 class="pv-title" id="pvTitle"></h2>
+                    <p class="pv-headline" id="pvHeadline"></p>
+                    <div class="pv-stores" id="pvStores"></div>
+                </header>
+
+                <div class="pv-gallery-wrap">
+                    <div class="pv-gallery" id="pvGallery" tabindex="0" aria-label="Telas do aplicativo"></div>
+                    <div class="pv-gallery-nav">
+                        <button type="button" class="pv-arrow" id="pvPrev" aria-label="Telas anteriores">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+                        </button>
+                        <button type="button" class="pv-arrow" id="pvNext" aria-label="Próximas telas">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+                        </button>
                     </div>
                 </div>
-                <div class="portfolio-images">
-                    <img style="width: 220px;" src="assets/app_epublic_castelo/00.jpeg" alt="Imagem App">
-                    <img style="width: 220px;" src="assets/app_epublic_castelo/01.jpeg" alt="Imagem App">
-                    <img style="width: 220px;" src="assets/app_epublic_castelo/02.jpeg" alt="Imagem App">
-                    <img style="width: 220px;" src="assets/app_epublic_castelo/03.jpeg" alt="Imagem App">
-                    <img style="width: 220px;" src="assets/app_epublic_castelo/04.jpeg" alt="Imagem App">
-                    <img style="width: 220px;" src="assets/app_epublic_castelo/05.jpeg" alt="Imagem App">
-                </div>
-            </div>
 
+                <div class="pv-details">
+                    <div class="pv-main">
+                        <h3 class="pv-h">Sobre o projeto</h3>
+                        <div id="pvDescription" class="pv-text"></div>
+                        <h3 class="pv-h">Principais funcionalidades</h3>
+                        <ul class="pv-features" id="pvFeatures"></ul>
+                    </div>
+                    <aside class="pv-side">
+                        <div class="pv-meta">
+                            <h3 class="pv-h">Tecnologias e integrações</h3>
+                            <ul class="pv-tags" id="pvTech"></ul>
+                        </div>
+                    </aside>
+                </div>
+
+                <nav class="pv-pager" aria-label="Outros projetos">
+                    <button type="button" class="pv-pager-btn" id="pvPagerPrev"></button>
+                    <button type="button" class="pv-pager-btn pv-pager-next" id="pvPagerNext"></button>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Visualização ampliada de uma tela -->
+        <div class="lightbox" id="lightbox" hidden>
+            <button type="button" class="lb-btn lb-close" id="lbClose" aria-label="Fechar imagem">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+            </button>
+            <button type="button" class="lb-btn lb-prev" id="lbPrev" aria-label="Imagem anterior">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <img id="lbImg" alt="">
+            <button type="button" class="lb-btn lb-next" id="lbNext" aria-label="Próxima imagem">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </button>
+            <span class="lb-count" id="lbCount"></span>
         </div>
     </div>
 
-    <div id="contantosDiv" class="mt-50">
-        <div>
-           <div>
-                <h3 style="font-size: 12pt; margin-bottom: 20px;">Entre em contato comigo</h3>
-                <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 20px;">
-                    <a href="https://www.linkedin.com/in/mateus-araujo-75845b259" target="_blank" style="color: #0e76a8; text-decoration: none;">
-                        <i class="fab fa-linkedin fa-2x"></i>
-                    </a>
-                    <a href="mailto:mateus.dolglas8@gmail.com" target="_blank" style="color: #dd4b39; text-decoration: none;">
-                        <i class="fas fa-envelope fa-2x"></i>
-                    </a>
-                    <a href="https://wa.me/5586995335104" target="_blank" style="color: #25914c; text-decoration: none;">
-                        <i class="fab fa-whatsapp fa-2x"></i>
-                    </a>
-                </div>
-                <p style="font-size: 10pt;">Desenvolvido por Mateus Araujo © <span id="ano"></span></p>
-            </div>
-        </div>
-    </div>
-    </section>
-
-    <script>
-        const anoAtual = new Date().getFullYear();
-
-        document.getElementById('ano').textContent = anoAtual;
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
